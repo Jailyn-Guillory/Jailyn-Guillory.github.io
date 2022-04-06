@@ -6,15 +6,15 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
+			width: 200px;
+			height: 300px;
 			background-color: teal;
-			font-size: 300%;
+			font-size: 400%;
 			text-align: center;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 1300px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -61,7 +61,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var PositionX = 500;
 
 			
 			/* 
@@ -69,11 +69,11 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update() {
-				
-
+			function update() { 
+				moveBoxTo(1300)
 			};
 
+			
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
